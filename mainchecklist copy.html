@@ -1,0 +1,918 @@
+<html>
+
+<head>
+        <link rel="stylesheet" href="./icofont/icofont.min.css">
+
+        <link href="css/fonts-nunito.css" rel="stylesheet">
+
+
+        <style>
+                @page {
+                        size:a4;
+                        margin:10mm;
+
+                        @bottom-center {
+                                content: "Page " counter(page) " of " counter(pages);
+                                font-size: 13pt;
+                                font-family: 'Nunito', sans-serif;
+                                color: #004D65;
+                        }
+
+                        @top-left {
+                                content: string(namesummarydate);
+                                color: #004D65;
+                                font-family: 'Nunito', sans-serif;
+                        }
+
+                        @top-right {
+                                content: string(agentname);
+                                color: #004D65;
+                                font-family: 'Nunito', sans-serif;
+                        }
+                }
+
+                @page {
+                        border-top: thin #004D65 solid;
+                }
+
+                @media screen {
+                        body {
+                                margin: 0;
+                        }
+                }
+
+                body {
+                        font-size: 1%;
+                        color: #004D65;
+                        font-family: 'Nunito', sans-serif;
+                }
+
+                .body {
+                        /* counter-reset: page 1;
+                        page: body; */
+                }
+
+                .numbers {}
+
+                .n1 {
+                        margin: 0px;
+                        font-size: 300em;
+                        margin-top: -0.13em;
+                        margin-left: -0.06em;
+                }
+
+                .agentfullname {
+                        margin-top: 15mm;
+                        width: 70%;
+                        height: auto;
+                        z-index: 2;
+                        left: 55mm;
+                        position: relative;
+                }
+
+                .agentthumbnailimage {
+                        width: 12%;
+                        height: auto;
+                        z-index: 2;
+                        left: 12%;
+                        bottom: 18mm;
+                        position: absolute;
+                }
+
+                .agenttitle {
+                        width: 70%;
+                        height: auto;
+                        bottom: 0px;
+                        z-index: 2;
+                        left: 28%;
+                        bottom: 23mm;
+                        position: absolute;
+                }
+
+                .agentwebprofileurl {
+                        width: 70%;
+                        height: auto;
+                        bottom: 0px;
+                        z-index: 2;
+                        left: 28%;
+                        bottom: 16mm;
+                        position: absolute;
+                }
+
+                .bottomrectangle {
+                        width: 100%;
+                        background-color: #004D65;
+                        height: 33mm;
+                        z-index: 1;
+                        position: relative;
+                }
+
+                .title {}
+
+                .uppercase {
+                        text-transform: uppercase;
+                }
+
+                .thin {
+                        font-weight: lighter;
+                }
+
+                #main_container {
+
+                        /* A4 */
+                        /* width: 210mm; */
+                        /* height: 297mm; */
+                        /* background-color: #fafdfc; */
+                        left: 0;
+                        top: 0;
+                        z-index: 0;
+
+
+                }
+
+                .container1 {
+                        position: relative;
+                        margin-top: 5%;
+                        margin-right: auto;
+                        margin-left: auto;
+                        height: auto;
+                        border: 0px blue solid;
+                        z-index: 1;
+                        padding: 0px;
+                        text-align: center;
+                }
+
+                .container2 {
+                        position: relative;
+                        margin-right: auto;
+                        margin-left: auto;
+                        height: auto;
+                        z-index: 2;
+                }
+
+                .container-left {
+                        height: auto;
+                        border: 0px blue solid;
+                        z-index: 2;
+                        display: inline-block;
+                }
+
+                #namesummarydate {
+                        string-set: namesummarydate content();
+                }
+
+                #agentname {
+                        string-set: agentname content();
+                        display: none;
+                }
+        </style>
+</head>
+
+<body>
+
+        <div id="main_container" class="body">
+
+                <div class=" container1 numbers" style="width:95%;">
+                        <p id="namesummarydate" class="n1 title uppercase"
+                                style="font-size:150em;letter-spacing:0.04em;margin-bottom:-1%;">
+                                [[fullname]] @ [[02/06/2001]]</p>
+                        <p class="n1 title uppercase" style="font-size:370em;margin-top:0%;margin-bottom:-1.5%;">
+                                Ringfence Checklist</p>
+                        <p class="n1 title uppercase"
+                                style="font-size:160em;margin-top:0%;letter-spacing:0.27em;font-weight:400;">Financial
+                                Planning Roadmap</p>
+                        <p id="agentname" class="n1 title" style="font-size:190em;letter-spacing:0.05em">
+                                [[agentname]]</p>
+                </div>
+
+                <!-- Analyse Nomination of Existing Policies -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:9mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0mm;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">1.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Analyse Nomination of Existing Policies</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">Policies bought from different companies and
+                                                period pay out differently.</span>
+                                </p>
+                        </div>
+                        [[norminationstatus]]
+                </div>
+
+                <!-- Elementary Protection -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:-1mm;">2.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Elementary Protection</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">Ensuring that the basics are all where they need
+                                                to be.</span>
+                                </p>
+                        </div>
+                        [[protectionstatus]]
+                </div>
+
+                <!-- Lasting Power of Attorney -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">3.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Lasting Power of Attorney</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">When important decisions are needed most and you
+                                                can’t make them.</span>
+                                </p>
+                        </div>
+                        [[lpastatus]]
+                </div>
+
+                <!-- Advanced Medical Directive -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">4.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Advanced Medical Directive</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">Ensuring your loved ones need not make the most
+                                                emotionally painful decisions.</span>
+                                </p>
+                        </div>
+                        [[amdstatus]]
+                </div>
+
+                <!-- Protection of Dignity -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">5.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Protection of Dignity</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">What took ages to build deserves to be cared
+                                                for. What took ages to build deserves to be cared
+                                                for. What took ages to build deserves to be cared
+                                                for. What took ages to build deserves to be cared
+                                                for.</span>
+                                </p>
+                        </div>
+                        [[pdstatus]]
+                </div>
+
+                <!-- Lasting Power of Attorney -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">3.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Lasting Power of Attorney</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">When important decisions are needed most and you
+                                                can’t make them.</span>
+                                </p>
+                        </div>
+                        [[lpastatus]]
+                </div>
+
+                <!-- Advanced Medical Directive -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">4.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Advanced Medical Directive</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">Ensuring your loved ones need not make the most
+                                                emotionally painful decisions.</span>
+                                </p>
+                        </div>
+                        [[amdstatus]]
+                </div>
+
+                <!-- Protection of Dignity -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">5.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Protection of Dignity</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">What took ages to build deserves to be cared
+                                                for.</span>
+                                </p>
+                        </div>
+                        [[pdstatus]]
+                </div>
+
+                <!-- Analyse Nomination of Existing Policies -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:9mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0mm;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">1.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Analyse Nomination of Existing Policies</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">Policies bought from different companies and
+                                                period pay out differently.</span>
+                                </p>
+                        </div>
+                        [[norminationstatus]]
+                </div>
+
+                <!-- Elementary Protection -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:-1mm;">2.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Elementary Protection</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">Ensuring that the basics are all where they need
+                                                to be.</span>
+                                </p>
+                        </div>
+                        [[protectionstatus]]
+                </div>
+
+
+
+                <!-- Protection of Dignity -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">5.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Protection of Dignity</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">What took ages to build deserves to be cared
+                                                for.</span>
+                                </p>
+                        </div>
+                        [[pdstatus]]
+                </div>
+
+                <!-- Lasting Power of Attorney -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">3.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Lasting Power of Attorney</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">When important decisions are needed most and you
+                                                can’t make them.</span>
+                                </p>
+                        </div>
+                        [[lpastatus]]
+                </div>
+
+                <!-- Advanced Medical Directive -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">4.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Advanced Medical Directive</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">Ensuring your loved ones need not make the most
+                                                emotionally painful decisions.</span>
+                                </p>
+                        </div>
+                        [[amdstatus]]
+                </div>
+
+                <!-- Protection of Dignity -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">5.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Protection of Dignity</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">What took ages to build deserves to be cared
+                                                for.</span>
+                                </p>
+                        </div>
+                        [[pdstatus]]
+                </div>
+
+                <!-- Analyse Nomination of Existing Policies -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:9mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0mm;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">1.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Analyse Nomination of Existing Policies</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">Policies bought from different companies and
+                                                period pay out differently.</span>
+                                </p>
+                        </div>
+                        [[norminationstatus]]
+                </div>
+
+                <!-- Elementary Protection -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:-1mm;">2.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Elementary Protection</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">Ensuring that the basics are all where they need
+                                                to be.</span>
+                                </p>
+                        </div>
+                        [[protectionstatus]]
+                </div>
+
+                <!-- Lasting Power of Attorney -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">3.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Lasting Power of Attorney</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">When important decisions are needed most and you
+                                                can’t make them.</span>
+                                </p>
+                        </div>
+                        [[lpastatus]]
+                </div>
+
+                <!-- Advanced Medical Directive -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">4.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Advanced Medical Directive</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">Ensuring your loved ones need not make the most
+                                                emotionally painful decisions.</span>
+                                </p>
+                        </div>
+                        [[amdstatus]]
+                </div>
+
+                <!-- Protection of Dignity -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">5.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Protection of Dignity</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">What took ages to build deserves to be cared
+                                                for.</span>
+                                </p>
+                        </div>
+                        [[pdstatus]]
+                </div>
+
+                <!-- Lasting Power of Attorney -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">3.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Lasting Power of Attorney</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">When important decisions are needed most and you
+                                                can’t make them.</span>
+                                </p>
+                        </div>
+                        [[lpastatus]]
+                </div>
+
+                <!-- Advanced Medical Directive -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">4.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Advanced Medical Directive</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">Ensuring your loved ones need not make the most
+                                                emotionally painful decisions.</span>
+                                </p>
+                        </div>
+                        [[amdstatus]]
+                </div>
+
+                <!-- Protection of Dignity -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">5.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Protection of Dignity</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">What took ages to build deserves to be cared
+                                                for.</span>
+                                </p>
+                        </div>
+                        [[pdstatus]]
+                </div>
+
+                <!-- Analyse Nomination of Existing Policies -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:9mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0mm;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">1.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Analyse Nomination of Existing Policies</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">Policies bought from different companies and
+                                                period pay out differently.</span>
+                                </p>
+                        </div>
+                        [[norminationstatus]]
+                </div>
+
+                <!-- Elementary Protection -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:-1mm;">2.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Elementary Protection</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">Ensuring that the basics are all where they need
+                                                to be.</span>
+                                </p>
+                        </div>
+                        [[protectionstatus]]
+                </div>
+
+                <!-- Lasting Power of Attorney -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">3.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Lasting Power of Attorney</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">When important decisions are needed most and you
+                                                can’t make them.</span>
+                                </p>
+                        </div>
+                        [[lpastatus]]
+                </div>
+
+                <!-- Advanced Medical Directive -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">4.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Advanced Medical Directive</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">Ensuring your loved ones need not make the most
+                                                emotionally painful decisions.</span>
+                                </p>
+                        </div>
+                        [[amdstatus]]
+                </div>
+
+                <!-- Protection of Dignity -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">5.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Protection of Dignity</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">What took ages to build deserves to be cared
+                                                for.</span>
+                                </p>
+                        </div>
+                        [[pdstatus]]
+                </div>
+
+                <!-- Lasting Power of Attorney -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">3.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Lasting Power of Attorney</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">When important decisions are needed most and you
+                                                can’t make them.</span>
+                                </p>
+                        </div>
+                        [[lpastatus]]
+                </div>
+
+                <!-- Advanced Medical Directive -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">4.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Advanced Medical Directive</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">Ensuring your loved ones need not make the most
+                                                emotionally painful decisions.</span>
+                                </p>
+                        </div>
+                        [[amdstatus]]
+                </div>
+
+                <!-- Protection of Dignity -->
+                <div class="container2 numbers thin" style="width:78%;margin-top:4mm;">
+                        <div class="container-left" style="width:9%;height:auto;padding-left:5%;padding-top:0%;">
+                                <div style="position:absolute;top:0mm;left:0mm;">
+                                        <p class="n1 title" style="font-size:520em;font-weight:600;margin-top:1mm;">5.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="container-left" style="width:70%;padding-top:2%;">
+                                <p class="n1 title"
+                                        style="font-size:145em;margin-top:0%;line-height:1.7em;letter-spacing:0.01em;margin-bottom:0mm;">
+                                        <span style="font-size:1.5em;">Protection of Dignity</span>
+                                </p>
+
+                                <p class="n1 title"
+                                        style="font-size:150em;margin-top:0%;line-height:1.15em;letter-spacing:0.01em;">
+                                        <span style="font-size:0.9em;">What took ages to build deserves to be cared
+                                                for.</span>
+                                </p>
+                        </div>
+                        [[pdstatus]]
+                </div>
+
+                <!-- agent fullname -->
+                <div class="agentfullname">
+                        <p id="agentname" class="n1 title" style="font-size:190em;letter-spacing:0.05em">[[agentname]]
+                        </p>
+                </div>
+
+
+
+
+
+                <!-- bottom rectangle -->
+                <div class="bottomrectangle">
+                        <!-- agent thumbnail image -->
+                        <div class="agentthumbnailimage">
+                                <img src="[[agentpic]]" style="width:100%;" />
+                        </div>
+
+                        <!-- agent title -->
+                        <div class="agenttitle">
+                                <p class="n1 title thin" style="font-size:130em;letter-spacing:0.05em;color:#fff;">
+                                        [[agentdesignation]]</p>
+                        </div>
+
+                        <!-- agent web profile url-->
+                        <div class="agentwebprofileurl">
+                                <p class="n1 title thin" style="font-size:130em;letter-spacing:0.05em;color:#fff;">
+                                        [[agenturl]]
+                                </p>
+                        </div>
+
+                </div>
+
+        </div>
+</body>
+
+</html>
